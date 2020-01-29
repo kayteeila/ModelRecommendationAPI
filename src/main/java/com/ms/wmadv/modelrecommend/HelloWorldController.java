@@ -20,7 +20,7 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world/get-model/{id}")
 	public Response helloWorldGetModel(@PathVariable Integer id) {
-		Response resp = new Response();
+		Response resp = new Response(null);
 		try {
 			Model model = dbconnHelper.getModel(id);
 			resp.setSuccessMessage("Model retrieved successfully.");
@@ -34,7 +34,7 @@ public class HelloWorldController {
 	
 	@GetMapping(path = "/hello-world/get-model-holdings/{id}")
 	public Response helloWorldGetModelHoldings(@PathVariable Integer id) {
-		Response resp = new Response();
+		Response resp = new Response(null);
 		try {
 			Model model = dbconnHelper.getModelHoldings(id);
 			resp.setSuccessMessage("Model holdings retrieved successfully.");
@@ -48,7 +48,7 @@ public class HelloWorldController {
 	
 	@GetMapping(path = "/hello-world/get-products")
 	public Response helloWorldGetProducts() {
-		Response resp = new Response();
+		Response resp = new Response(null);
 		try {
 			List<Product> products = dbconnHelper.getProducts();
 			if(products.isEmpty()) {
