@@ -21,3 +21,8 @@ Test Run
 2. Go to localhost:8080/hello-world to test the web app
 3. Call /models to test the API and DB connection
 # ModelRecommendationAPI
+
+https://github.lab.morganstanley.com/ilamuruk/AzureExplorers_Repo_ModelDataLoad
+https://github.lab.morganstanley.com/ilamuruk/AzureExplorers_Repo_ModelPortfolioUI
+https://github.lab.morganstanley.com/ilamuruk/AzureExplorers_Repo_RecomMLAPI
+https://github.lab.morganstanley.com/ilamuruk/AzureExplorers_Repo_JavaAPIs
